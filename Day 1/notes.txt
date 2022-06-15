@@ -2,4 +2,16 @@ DOM : DOM stands for Document Object Model.
     : DOM is a programming interface for web documents.
     : using DOM documents can be accessed, changed or deleted.
 
-DOM and virtual DOM : In real DOM when we made some changes then overall page will be reloaded.
+DOM and virtual DOM : In real DOM when we made some specific changes in any element, then overall page will be reloaded.
+                        (it's a time taking process)
+                    : In virtual DOM not overall page reloaded, only change the element.
+
+Why React is so famous : React is a highly testable application.
+                       : many companies are in React.
+                       : React is easy to Read and easy to USE.  
+                       : creating dynamic web applications becomes eaasier.
+                       : reusable components like (NPM).
+                                 NPM : node package manager.
+                                     : NPM is free to use.
+                                     : NPM use for manage dependency.
+                            
