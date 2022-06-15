@@ -1,0 +1,5 @@
+DOM : DOM stands for Document Object Model.
+    : DOM is a programming interface for web documents.
+    : using DOM documents can be accessed, changed or deleted.
+
+DOM and virtual DOM : In real DOM when we made some changes then overall page will be reloaded.
