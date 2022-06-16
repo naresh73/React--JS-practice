@@ -9,12 +9,10 @@ function NPM() {
         /u> < /
         p >
         <
-        p2 >: React is a highly testable application. <
-        br / >: React is easy to Read and easy to USE. <
-        br / >
-        : creating dynamic web applications becomes eaasier. <
-        br / >
-        : reusable components like NPM. <
+        p2 >: NPM is free to use. <
+        br / >: NPM use
+        for manage dependency. <
+        br / > <
         /p2> < /
         div >
     )
