@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './1st.css';
+import './2nd.css';
+import './3rd.css';
+import './4th.css';
+import './5th.css';
+import Dom from "./2nd";
+import React from "./1st";
+import Vdom from './3rd';
+import ReactImp from './4th';
+import NPM from './5th';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    return ( <
+        div >
+        <
+        React / >
+        <
+        Dom / >
+        <
+        Vdom / >
+        <
+        ReactImp / >
+        <
+        NPM / >
+        <
+        /div>
+    )
 }
-
-export default App;
