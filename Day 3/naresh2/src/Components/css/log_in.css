@@ -1,0 +1,12 @@
+.Frm{
+    background-color:darkseagreen;
+    border:black dotted 10px;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+    font-style:italic;
+    margin:10px;
+    padding:10px;
+    text-align:center;
+
+}

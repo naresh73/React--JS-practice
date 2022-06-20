@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import './Components/css/slide_bar.css';
+import './App.css'
+import ControlledCarousel from './Components/JS_files/slide_bar.js';
+import Forms from './Components/JS_files/log_in.js';
+import ColorSchemesExample from './Components/JS_files/nav_bar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ColorSchemesExample/>
+      <ControlledCarousel/>
+      <Forms/>
     </div>
   );
 }
