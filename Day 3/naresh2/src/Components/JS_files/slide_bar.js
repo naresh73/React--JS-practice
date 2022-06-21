@@ -1,49 +1,53 @@
-import React from 'react';
-import {Carousel} from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 
-function ControlledCarousel() {
-         return(
-            <Carousel className='poster' fade={true}>
-                <Carousel.Item>
-                    <img 
-                        className = "d-block w-100"
-                        src = "https://wallpaperaccess.com/full/25520.jpg"
-                        alt = "First Slide"
-                        
-                    />
+function UncontrolledExample() {
+    return (
+        <Carousel>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="https://wallpaperaccess.com/full/25520.jpg"
+                    alt="First slide"
+                    height={900}
+                    width={900}
+                />
                 <Carousel.Caption>
-                    <h3 style={{ color:'golden'}}>GAME OF THRONES</h3>
-                </Carousel.Caption>    
-                </Carousel.Item>
+                    <h3>GAME OF THRONES</h3>
+                    <p>THE NIGHT IS DARK AND FULL OF TERRORS <br /> R'HILLOR</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="https://wallpaperaccess.com/full/1087741.jpg"
+                    alt="Second slide"
+                    height={900}
+                    width={900}
+                />
 
-                <Carousel.Item>
-                    <img 
-                        className = "d-block w-100"
-                        src = "https://wallpaperaccess.com/full/1087741.jpg"
-                        alt = "Second Slide"
-                        
-                        
-                    />
                 <Carousel.Caption>
-                    <h3 style={{ color:'white'}}>PEAKY BLINDERS</h3>
-                </Carousel.Caption>    
-                </Carousel.Item>
+                    <h3>PEAKY BLINDERS</h3>
+                    <p>TIME TO MAKE SOME REAL MONEY</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="https://wallpaperaccess.com/full/2581598.jpg"
+                    alt="Third slide"
+                    height={900}
+                    width={900}
+                />
 
-                <Carousel.Item>
-                    <img 
-                        className = "d-block w-100"
-                    src = "https://wallpaperaccess.com/full/2581598.jpg"
-                        alt = "Third Slide"
-                        
-                    />
                 <Carousel.Caption>
-                    <h3 style={{ color:'white'}}>MONEY HIEST</h3>
-                </Carousel.Caption>    
-                </Carousel.Item>
-
-            </Carousel>
-
-         );
+                    <h3>MONEY HEIST</h3>
+                    <p>
+                        LE CASA DE PAPEL
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
+    );
 }
 
-export default ControlledCarousel;
+export default UncontrolledExample;

@@ -4,10 +4,10 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function ColorSchemesExample() {
     return (
-        <>
+        <div >
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#netflix" color='red'>
+                    <Navbar.Brand href="#netflix">
                         NETFLIX
                     </Navbar.Brand>
                     <Nav className="me-auto">
@@ -17,7 +17,7 @@ function ColorSchemesExample() {
                     </Nav>
                 </Container>
             </Navbar>
-        </>
+        </div>
     );
 }
 
