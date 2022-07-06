@@ -1,63 +1,82 @@
 import React, { useState } from "react";
-import './App.css';
 
-function App() {
-
+function Calc() 
+{
   const [num1, setNum1] = useState();
   const [num2, setNum2] = useState();
-  const [oper, setOper] = useState();
-  const [res, setRes] = useState();
+  const [op, setOp] = useState();
+  const [result, setResult] = useState();
 
-  function handleChange(e, num1) {
-    setNum1(e.target.value);
+  function handleChange(event, number) 
+  {
+    setNum1(event.target.value);
+  }
+  function handleChange1(event, number) 
+  {
+    setNum2(event.target.value);
   }
 
-  function handleChange2(e, num2) {
-    setNum2(e.target.value);
+  function handleButtonClick(str)
+  {
+  setOp(str);
   }
 
-  function handleSelect(e) {
-    setOper(e.target.value);
-  }
-
-  function calcuLate() {
+  function calculate()
+   {
+    console.log(op);
     let ans = 0;
-    if (oper === '+') {
+    if (op === "+") 
+    {
       ans = Number(num1) + Number(num2);
-      return ans;
     }
-    else if (oper === '-') {
-      ans = Number(num1) - Number(num2);
-      return ans;
-    }
-    else if (oper === '*') {
+    else if (op === "-") 
+    {
+        ans = Number(num1) - Number(num2);
+    } 
+    else if (op === "*") 
+    {
       ans = Number(num1) * Number(num2);
-      return ans;
+    } 
+    else if (op==="/") 
+    {
+      ans = Number(num1) / Number(num2);
     }
-    setRes(ans);
+    setResult(ans);
   }
   return (
+    
     <div>
-      <input type="number"
+      <label>Enter 1st number = </label>
+      <input
+        type="number"
+        name="num1"
         value={num1}
-        onChange={(e) => handleChange(e, num1)} />
-
-      <input type="number"
+        onChange={(event) => handleChange(event, num1)}
+      />
+      <br></br>
+      <label>Enter 2nd number = </label>
+      <input
+        type="number"
+        name="num2"
         value={num2}
-        onChange={(e) => handleChange2(e, num2)} />
-
-      <select name="operator" onChange={(e) => handleSelect(e)}>
-        <option value="Add">+</option>
-        <option value="Subs">-</option>
-        <option value="Multi">*</option>
-        <option value="Div">/</option>
-      </select>
-
-      <button type="submit" onClick={calcuLate}>Result</button>
-
-      <h1>Result is {res} </h1>
+        onChange={(event) => handleChange1(event, num2)}
+      />
+      <br></br>
+      <label>Enter operator = </label>
+      
+      <button onClick={() => handleButtonClick('+')}>+</button>
+      <button onClick={() => handleButtonClick('-')}>-</button>
+      <button onClick={() => handleButtonClick('*')}>*</button>
+      <button onClick={() => handleButtonClick('/')}>/</button>
+      
+      <button type="submit" onClick={calculate}>
+        Calculate
+      </button>
+     
+      <h1>{num1} {op} {num2}</h1>
+      <h1>Output is: {result}</h1>
     </div>
-  ); 
+  );
 }
 
-export default App;
+export default Calc;
