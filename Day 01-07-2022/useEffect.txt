@@ -1,0 +1,11 @@
+import React, { useEffect } from 'react';
+
+useEffect : useEffect is the only function which we can control function itself (using dependency).
+            without using useEffect we can't control any function().
+
+          : dependency Array is available in eseEffect
+          : using dependency Array we can control that how many times our function will run 
+          : when the dependency Array changes happened
+          : we can use multiple dependency Array in  useEffect (if changes made in any one of them the useEffect function will run)
+          : [] Empty dependency Array - one time run 
+          
