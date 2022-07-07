@@ -1,0 +1,22 @@
+Routing : 
+
+- Router is mainly used for developing single page web application.
+- first we have to import { BrowserRouter } (on Router switch) .
+- BrowserRouter is switch for Routing.
+- in Routing it won't reload the page.
+- routing will show us data on DOM without any reload. (DOM manipulation)
+
+
+Diff b/w State and Props :
+
+State : - State is a built-in React object.
+        - Used to contain data or information about the component.
+        - we store information about a component.
+        - in State we manage the data.
+        - using setState we can modify State. (Dom manipulation)
+        - States is controlled by components.
+        - It can only be accessed or modified inside the component or by the component directly.
+
+
+Props : - We use Props to pass data from one components to another components.
+        - It is similar to function arguments and can be passed to the component the same way as arguments passed in a function.
