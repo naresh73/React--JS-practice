@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 export default function Table(){
 
@@ -8,10 +8,8 @@ export default function Table(){
         const js = await result.json();
         setData(js);
     }
-    useEffect(() => {
-        record();
-    }, [])
-    console.log(data);
+
+    record();
 
     return(
         <table className='table'>
