@@ -20,3 +20,11 @@ State : - State is a built-in React object.
 
 Props : - We use Props to pass data from one components to another components.
         - It is similar to function arguments and can be passed to the component the same way as arguments passed in a function.
+
+
+Hooks :
+ - Hooks is a version controller for React.
+ - we can use state and other React features without writing a class. 
+ - using Hooks we do DOM manipulation.
+ - Hooks allow us to "hook" into React features.
+ - we can also use them to save some data for us. which data can be used in other components.
